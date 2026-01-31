@@ -51,5 +51,5 @@ jobs:
           publish_dir: ./src
           # Branch to deploy to
           publish_branch: gh-pages
-          # Optional: Add CNAME file for custom domain
-          # cname: example.com
+          # Use repository variable (create repo variable CNAME) for custom domain
+          cname: ${{ vars.CNAME }}
